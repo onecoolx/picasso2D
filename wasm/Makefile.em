@@ -1,10 +1,10 @@
 FREETYPE_INC=-I/usr/include/freetype2
-INC=-I./ -I../src -I../src/gfx -I../src/font -I../src/include -I../include ${FREETYPE_INC}
+INC=-I./ -I../src -I../src/gfx -I../src/font -I../src/common -I../include ${FREETYPE_INC}
 
 CXXFLAGS=-Wall -O3 -fno-rtti -fno-exceptions
 CXXFLAGS +=-DEXPORT 
 
-VPATH=../src ../src/include ../src/core ../src/gfx ../src/font
+VPATH=../src ../src/common ../src/core ../src/gfx ../src/font
 
 objects= \
         device.o \
